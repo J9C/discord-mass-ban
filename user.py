@@ -81,7 +81,7 @@ async def main():
 
 async def guild():
     global membercount, guildid
-    os.system('cls & mode 70, 12 & title discord mass ban │ by lxw (github.com/9xw)')
+    os.system('cls & mode 70, 12')
     guildid = int(input(''' 
  [?] Enter guild id: '''))
     await client.wait_until_ready()
@@ -104,6 +104,7 @@ async def guild():
         await main()
 
 def check():
+    os.system('cls & mode 70, 12 & title discord mass ban │ by lxw (github.com/9xw)')
     try:
         client.run(token, bot=False)
     except:
